@@ -10,7 +10,67 @@ html{
     font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-size: 16px;
-    color: #5a5150;
+    color: #5a5150;}
+
+.wrapper{
+    margin: 0 auto;
+    background-color: white;
+    max-width: 1795px;
+    
+}
+
+body{
+    background-color: #cccccc;
+}
+
+header{
+    display: flex;
+    height: 90px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 8px rgb(0 0 0 / 6%);
+    padding: 0 40px;
+    margin-bottom: 40px;
+}
+
+.logo{
+    margin-top: 10px;
+}
+
+ul.main-menu{
+list-style: none;
+}
+
+li.menu-item::after{
+    content: " | ";
+    padding-left: 15px;
+    }
+
+ul.socials{
+list-style: none;
+}
+
+li.menu-item a{
+    color: #4e4b4b;
+}
+
+li.menu-item a:hover{
+    color: #ca404f;
+}
+
+li.social-item a{
+    color: #4e4b4b;
+    display: inline-block;
+}
+
+li.menu-item{
+   display:inline-block ;
+   padding: 15px;
+}
+
+li.social-item a:hover{
+    color: #ca404f;
 }
 
 h1 ,h2 h3, h4 , h5, h6{
@@ -18,6 +78,7 @@ h1 ,h2 h3, h4 , h5, h6{
     font-style: normal;
     color: #4e4b4b;
     line-height: 1.2;
+    font-weight: normal;
 }
 
 h2{
@@ -44,4 +105,69 @@ button{
     color: white;
     line-height: 42px;
     background-color: #ca404f;
+    padding: 0 20px;
+    line-height: 10px;
+    height: 42px;
+    border: none;
+}
+
+main{
+    padding: 0 100px 40px 100px;
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.recepten{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.recept{
+    width: 1040px;
+    display: flex;
+}
+
+.discription h4{
+    margin-top: 15px;
+}
+
+.discription p{
+  
+    margin: 60px 0px;
+}
+
+.discription{
+    width: 485px;
+    margin-right: 75px;
+}
+recepten-image{
+    width: 485px;
+}
+
+.recept-items{
+    width: 485px;
+}
+
+
+/* toen ik de class anders had genoemd in mijn style sheet en html deed hij het niet?? ik had recepten-items */
+.recept-items .item{
+ display: grid;
+ grid-template-columns: auto 100px;
+ padding-bottom: 10px;
+ border-bottom: 1px solid #eaeaea;
+ margin-bottom: 15px;
+}
+
+.item-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.recept-items .item:{
+    background-color: #eaeaea;
+
 }
